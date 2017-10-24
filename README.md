@@ -1,9 +1,11 @@
 # GoogleTranslation
 
-  ![菜单](./images/editor_popup_menu.png)
-  ![英文转中文](./images/entozh.png)
-  ![中文转英文](./images/zhtoen.png)
-  ![比较](./images/compare.png)
+![菜单](./images/editor_popup_menu.png)
+![英文转中文](./images/entozh.png)
+![中文转英文](./images/zhtoen.png)
+  
+**有道和谷歌的比较**
+![比较](./images/compare.png)
 
 **插件基于以下项目：**
 - [py-googletrans](https://github.com/ssut/py-googletrans)
