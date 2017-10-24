@@ -12,7 +12,7 @@
 
 这个插件是利用[谷歌翻译](https://translate.google.com)的漏洞从而实现免费翻译的功能，所以说不准什么时候会被修复，所以不保证一直能用，漏洞详情请看[破解google翻译API全过程](http://www.cnblogs.com/by-dream/p/6554340.html)。
 
-因为是利用漏洞所以不能像TranslationPlugin或者ECTranslation一样还能有释义等功能，从某种意义上来说它只是他们的补充（因为Google的翻译的确比他们要好）。
+因为是利用漏洞所以不能像TranslationPlugin或者ECTranslation一样还能有释义等功能，从某种意义上来说它只是他们的补充（因为Google的翻译的确比有道等国内翻译API要好）。
 
 ## 使用
 
