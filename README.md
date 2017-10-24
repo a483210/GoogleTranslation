@@ -14,6 +14,16 @@
 
 因为是利用漏洞所以不能像TranslationPlugin或者ECTranslation一样还能有释义等功能，从某种意义上来说它只是他们的补充（因为Google的翻译的确比有道等国内翻译API要好）。
 
+## 安装
+
+**使用 IDE 内置插件系统[审核中]:**
+- <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Browse repositories...</kbd> > <kbd>搜索并找到"GoogleTranslation"</kbd> > <kbd>Install Plugin</kbd>
+
+**手动:**
+- 下载[`最新发布的插件包`](https://github.com/a483210/GoogleTranslation/releases/latest) -> <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Install plugin from disk...</kbd>
+
+重启**IDE**.
+
 ## 使用
 
 1. **翻译编辑器中的文本:**
