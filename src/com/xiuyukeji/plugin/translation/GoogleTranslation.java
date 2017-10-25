@@ -33,20 +33,20 @@ public class GoogleTranslation extends AnAction {
     }
 
     private void getTranslation(AnActionEvent event) {
-        Editor mEditor = event.getData(PlatformDataKeys.EDITOR);
-        if (null == mEditor) {
+        Editor editor = event.getData(PlatformDataKeys.EDITOR);
+        if (editor == null) {
             return;
         }
-        SelectionModel model = mEditor.getSelectionModel();
+        SelectionModel model = editor.getSelectionModel();
         String selectedText = model.getSelectedText();
         if (TextUtils.isEmpty(selectedText)) {
-            selectedText = getCurrentWords(mEditor);
+            selectedText = getCurrentWords(editor);
             if (TextUtils.isEmpty(selectedText)) {
                 return;
             }
         }
         String queryText = strip(addBlanks(selectedText));
-        new Thread(new RequestRunnable(mTranslator, mEditor, queryText)).start();
+        new Thread(new RequestRunnable(mTranslator, editor, queryText)).start();
     }
 
     private String getCurrentWords(Editor editor) {

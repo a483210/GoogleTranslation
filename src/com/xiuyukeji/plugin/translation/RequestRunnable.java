@@ -6,6 +6,7 @@ import com.intellij.openapi.ui.popup.Balloon;
 import com.intellij.openapi.ui.popup.JBPopupFactory;
 import com.intellij.ui.Gray;
 import com.intellij.ui.JBColor;
+import com.intellij.ui.popup.PopupFactoryImpl;
 import com.xiuyukeji.plugin.translation.translator.impl.GoogleTranslator;
 import com.xiuyukeji.plugin.translation.translator.trans.Language;
 
@@ -34,7 +35,7 @@ class RequestRunnable implements Runnable {
             text = mGoogleTranslator.translation(Language.EN, Language.ZH, mQuery);
         }
         if (text == null) {
-            showPopupBalloon("无法翻译！");
+            showPopupBalloon("翻译出错！");
         } else {
             showPopupBalloon("翻译：" + text);
         }
@@ -62,6 +63,7 @@ class RequestRunnable implements Runnable {
 
     private void showPopupBalloon(final String result) {
         ApplicationManager.getApplication().invokeLater(() -> {
+            mEditor.putUserData(PopupFactoryImpl.ANCHOR_POPUP_POSITION, null);//解决因为TranslationPlugin而导致的泡泡显示错位问题
             JBPopupFactory factory = JBPopupFactory.getInstance();
             factory.createHtmlTextBalloonBuilder(result, null, new JBColor(Gray._242, Gray._0), null)
                     .createBalloon()

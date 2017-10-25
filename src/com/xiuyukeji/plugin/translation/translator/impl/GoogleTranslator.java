@@ -26,7 +26,6 @@ public final class GoogleTranslator extends AbstractTranslator {
 
     @Override
     protected String getResponse(Language from, Language to, String query) throws Exception {
-
         HttpParams params = new HttpPostParams();//统一采用post，若字符长度小于999用get也可以的
         String tk = tk(query);
 
@@ -66,6 +65,7 @@ public final class GoogleTranslator extends AbstractTranslator {
 
         for (int i = 0; i < segments.size(); i++) {
             result.append(segments.getJSONArray(i).getString(0));
+            result.append("\r\n");
         }
 
         return new String(result);
