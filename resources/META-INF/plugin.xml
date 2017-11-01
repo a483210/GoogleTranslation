@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.xiuyukeji.plugin.translation</id>
     <name>GoogleTranslation</name>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <vendor email="a483210@163.com" url="https://github.com/a483210">a483210</vendor>
 
     <description><![CDATA[
@@ -9,12 +9,12 @@
       <br/>
 
       <b>
-        <a href="https://github.com/a483210/GoogleTranslation">主页</a>
+        <a href="https://github.com/a483210/GoogleTranslation">Home Page</a>
       </b>
       <br/>
       <br/>
 
-      工程基于以下项目
+      The plugin is based on the following items
       <br/>
       <br>
       <b>
@@ -26,25 +26,14 @@
       <br/>
       <br/>
 
-      GoogleTranslation是一个谷歌翻译插件，支持中英互译。
+      Plugin for translate English to Chinese.
       <br/>
       <br/>
-      使用方法（首先你需要科学上网）
+      General Usage Instructions:
       <ul>
-        <li>选择需要翻译的文本 > 点击鼠标右键 > 点击GoogleTranslate。</li>
-        <li>或者使用快捷键CTRL + Alt + 1进行翻译。</li>
-        <li>你可以直接翻译如"getTranslatedString"和"HELLO_WORLD"这样的文本。</li>
+        <li>Choose the word you want translate.</li>
+        <li>Press CTRL + Alt + 1.</li>
       <ul/>
-
-      <b>
-        PS:
-        <br/>
-        这个插件是利用
-        <a href="https://translate.google.com">谷歌翻译</a>
-        的漏洞，说不准什么时候会被修复，所以不保证一直能用，详情请看
-        <a href="http://www.cnblogs.com/by-dream/p/6554340.html">破解google翻译API全过程</a>
-        。
-      </b>
     ]]></description>
 
     <change-notes><![CDATA[
