@@ -19,7 +19,7 @@
 
 ## 安装
 
-**使用 IDE 内置插件系统[审核中]:**
+**使用 IDE 内置插件系统:**
 - <kbd>Preferences(Settings)</kbd> > <kbd>Plugins</kbd> > <kbd>Browse repositories...</kbd> > <kbd>搜索并找到"GoogleTranslation"</kbd> > <kbd>Install Plugin</kbd>
 
 **手动:**
