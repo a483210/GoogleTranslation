@@ -16,9 +16,9 @@ import com.xiuyukeji.plugin.translation.translator.trans.Language;
  * @author Created by jz on 2017/10/24 14:45
  */
 class RequestRunnable implements Runnable {
-    private GoogleTranslator mGoogleTranslator;
-    private Editor mEditor;
-    private String mQuery;
+    private final GoogleTranslator mGoogleTranslator;
+    private final Editor mEditor;
+    private final String mQuery;
 
     RequestRunnable(GoogleTranslator translator, Editor editor, String query) {
         this.mEditor = editor;

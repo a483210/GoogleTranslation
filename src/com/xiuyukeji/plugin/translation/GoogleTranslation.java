@@ -10,7 +10,9 @@ import com.intellij.openapi.editor.SelectionModel;
 import com.intellij.openapi.util.IconLoader;
 import com.intellij.openapi.util.TextRange;
 import com.xiuyukeji.plugin.translation.translator.impl.GoogleTranslator;
-import org.apache.http.util.TextUtils;
+
+import org.apache.commons.lang.StringUtils;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * 谷歌翻译插件
@@ -26,7 +28,7 @@ public class GoogleTranslation extends AnAction {
     }
 
     @Override
-    public void actionPerformed(AnActionEvent e) {
+    public void actionPerformed(@NotNull AnActionEvent e) {
         if (!isFastClick()) {
             getTranslation(e);
         }
@@ -39,9 +41,9 @@ public class GoogleTranslation extends AnAction {
         }
         SelectionModel model = editor.getSelectionModel();
         String selectedText = model.getSelectedText();
-        if (TextUtils.isEmpty(selectedText)) {
+        if (StringUtils.isEmpty(selectedText)) {
             selectedText = getCurrentWords(editor);
-            if (TextUtils.isEmpty(selectedText)) {
+            if (StringUtils.isEmpty(selectedText)) {
                 return;
             }
         }

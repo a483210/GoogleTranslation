@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.xiuyukeji.plugin.translation</id>
     <name>GoogleTranslation</name>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <vendor email="a483210@163.com" url="https://github.com/a483210">a483210</vendor>
 
     <description><![CDATA[
@@ -42,7 +42,7 @@
     </change-notes>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-    <idea-version since-build="145.0"/>
+    <idea-version since-build="203"/>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
